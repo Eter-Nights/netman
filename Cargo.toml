@@ -4,3 +4,25 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+rtnetlink = "0.21.0"
+mozim = "0.3.2"
+
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+
+anyhow = "1.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# 仅供 nmctl 客户端使用
+clap = { version = "4", features = ["derive"] }
+
+[[bin]]
+name = "netman"
+path = "src/main.rs"
+
+[[bin]]
+name = "nmctl"
+path = "src/bin/nmctl.rs"
