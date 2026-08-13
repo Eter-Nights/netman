@@ -17,8 +17,7 @@
                 "rust-lang.rust-analyzer",
                 "vadimcn.vscode-lldb",
                 "fill-labs.dependi",
-                "tamasfe.even-better-toml",
-                "johnny-zhao.oai-compatible-copilot"
+                "tamasfe.even-better-toml"
             ]
         }
     }
